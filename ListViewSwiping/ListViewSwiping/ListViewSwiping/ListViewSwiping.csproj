@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\add.png" />
+    <None Remove="Images\Delete.png" />
+    <None Remove="Images\Favorites.png" />
+    <None Remove="Images\Favorites1.png" />
+    <None Remove="Images\InboxIcon.png" />
+    <None Remove="Images\LeftSwipIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Delete.png" />
+    <EmbeddedResource Include="Images\Favorites.png" />
+    <EmbeddedResource Include="Images\Favorites1.png" />
+    <EmbeddedResource Include="Images\InboxIcon.png" />
+    <EmbeddedResource Include="Images\LeftSwipIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.1.0.53" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="SfPopUpView\SfPopUpView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="View\SwipingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="View\SwipingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>
