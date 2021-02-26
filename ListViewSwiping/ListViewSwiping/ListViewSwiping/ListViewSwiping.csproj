@@ -15,7 +15,6 @@
     <None Remove="Images\Favorites.png" />
     <None Remove="Images\Favorites1.png" />
     <None Remove="Images\InboxIcon.png" />
-    <None Remove="Images\LeftSwipIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,12 +22,11 @@
     <EmbeddedResource Include="Images\Favorites.png" />
     <EmbeddedResource Include="Images\Favorites1.png" />
     <EmbeddedResource Include="Images\InboxIcon.png" />
-    <EmbeddedResource Include="Images\LeftSwipIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.1.0.53" />
-    <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.4.0.44" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
   </ItemGroup>
 
   <ItemGroup>

@@ -71,6 +71,21 @@ namespace Swiping
             }
         }
 
+        private void ListView_SwipeStarted(object sender, Syncfusion.ListView.XForms.SwipeStartedEventArgs e)
+        {
+            itemIndex = -1;
+        }
+
+        private void ListView_Swiping(object sender, SwipingEventArgs e)
+        {
+            if (e.ItemIndex == 1 && e.SwipeOffSet > 70)
+                e.Handled = true;
+        }
+
+        private void ListView_SwipeEnded(object sender, Syncfusion.ListView.XForms.SwipeEndedEventArgs e)
+        {
+            itemIndex = e.ItemIndex;
+        }
         #endregion
 
     }
